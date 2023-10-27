@@ -5,6 +5,12 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiropracticClinic", "ChiropracticClinic\ChiropracticClinic.csproj", "{65FAFEB8-74A9-4474-A216-A9D6AB308EBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiropracticClinic.DataAccess", "ChiropracticClinic.DataAccess\ChiropracticClinic.DataAccess.csproj", "{BD709395-8521-4EF8-91FD-E4F4E64C7E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiropracticClinic.Models", "ChiropracticClinic.Models\ChiropracticClinic.Models.csproj", "{E7869231-6C9F-45E1-92A8-C5944A01D7AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiropracticClinic.Utilities", "ChiropracticClinic.Utilities\ChiropracticClinic.Utilities.csproj", "{23BA8B10-ED91-4E67-A346-05CFE0480E83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{65FAFEB8-74A9-4474-A216-A9D6AB308EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65FAFEB8-74A9-4474-A216-A9D6AB308EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65FAFEB8-74A9-4474-A216-A9D6AB308EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD709395-8521-4EF8-91FD-E4F4E64C7E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD709395-8521-4EF8-91FD-E4F4E64C7E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD709395-8521-4EF8-91FD-E4F4E64C7E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD709395-8521-4EF8-91FD-E4F4E64C7E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7869231-6C9F-45E1-92A8-C5944A01D7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7869231-6C9F-45E1-92A8-C5944A01D7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7869231-6C9F-45E1-92A8-C5944A01D7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7869231-6C9F-45E1-92A8-C5944A01D7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23BA8B10-ED91-4E67-A346-05CFE0480E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23BA8B10-ED91-4E67-A346-05CFE0480E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23BA8B10-ED91-4E67-A346-05CFE0480E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23BA8B10-ED91-4E67-A346-05CFE0480E83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

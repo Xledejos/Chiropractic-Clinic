@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChiropracticClinic.Utilities\ChiropracticClinic.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
