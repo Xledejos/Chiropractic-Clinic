@@ -22,4 +22,8 @@
     <ProjectReference Include="..\ChiropracticClinic.Utilities\ChiropracticClinic.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Producto\Controllers\" />
+  </ItemGroup>
+
 </Project>

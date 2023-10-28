@@ -10,7 +10,7 @@ namespace ChiropracticClinic.Models
     public class Producto
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         [Required(ErrorMessage = "Obligatorio")]
         [MaxLength(50)]
         public string Name { get; set; }
