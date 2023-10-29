@@ -4,8 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChiropracticClinic.Models.Repository
 {
-    public class GenericRepository<T> : IGenericRepository<T>
+    public class GenericRepository<T, Guid> : IGenericRepository<T, Guid>
         where T : class
+        where Guid : IEquatable<Guid>
     {
         private readonly ApplicationDbContext _context;
         protected DbSet<T> Entities => _context.Set<T>();
@@ -15,27 +16,25 @@ namespace ChiropracticClinic.Models.Repository
             _context = context;
         }
 
-        public Task<bool> Delete(Guid id)
+        public async Task Insert(T entity)
         {
-            throw new NotImplementedException();
+            await Entities.AddAsync(entity);
         }
 
-        public Task<T> Get(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<T?> GetById(Guid id)
+            => await Entities.FirstOrDefaultAsync();
 
         public IQueryable<T> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Task<T> GetById(Guid id)
+        public void Update(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(T entity)
+        public Task<bool> Delete(Guid id)
         {
             throw new NotImplementedException();
         }

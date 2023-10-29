@@ -19,7 +19,7 @@ namespace ChiropracticClinic.Models
         public string Description { get; set; }
         [Required(ErrorMessage = "Obligatorio")]
         [Range(0,100, ErrorMessage = "Debe ser mayor a cero")]
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
     }
 }

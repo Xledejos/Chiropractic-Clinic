@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChiropracticClinic.DataAccess.Repository.IRepository
 {
-    public interface IGenericRepository<T>
+    public interface IGenericRepository<T, Guid>
     {
-        Task<T> Get(T entity);
-        Task<T> GetById(Guid id);
+        Task Insert(T entity);
+        Task<T?> GetById(Guid id);
         IQueryable<T> GetAll();
         void Update(T entity);
         Task<bool> Delete(Guid id);
