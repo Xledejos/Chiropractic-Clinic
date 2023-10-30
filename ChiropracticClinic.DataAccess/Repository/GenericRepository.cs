@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChiropracticClinic.Models.Repository
 {
-    public abstract class GenericRepository<T, Guid> : IGenericRepository<T, Guid>
+    public class GenericRepository<T, Guid> : IGenericRepository<T, Guid>
         where T : class
         where Guid : IEquatable<Guid>
     {
