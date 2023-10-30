@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,5 @@ namespace ChiropracticClinic.Models
         [Required(ErrorMessage = "Obligatorio")]
         [Range(0,100, ErrorMessage = "Debe ser mayor a cero")]
         public double Price { get; set; }
-
     }
 }

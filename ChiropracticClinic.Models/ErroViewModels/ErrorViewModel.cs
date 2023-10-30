@@ -1,4 +1,4 @@
-namespace ChiropracticClinic.Models
+namespace ChiropracticClinic.Models.ErroViewModels
 {
     public class ErrorViewModel
     {

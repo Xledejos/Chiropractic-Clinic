@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ChiropracticClinic.Models.Repository
 {
-    public class GenericRepository<T, Guid> : IGenericRepository<T, Guid>
+    public abstract class GenericRepository<T, Guid> : IGenericRepository<T, Guid>
         where T : class
         where Guid : IEquatable<Guid>
     {
@@ -22,21 +22,14 @@ namespace ChiropracticClinic.Models.Repository
         }
 
         public async Task<T?> GetById(Guid id)
-            => await Entities.FirstOrDefaultAsync();
+            => await Entities.FirstOrDefaultAsync(Guid => Guid.Equals(id));
 
         public IQueryable<T> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+         => Entities;
 
-        public void Update(T entity)
+        public void Delete(T entity)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> Delete(Guid id)
-        {
-            throw new NotImplementedException();
+            Entities.Remove(entity);
         }
     }
 }

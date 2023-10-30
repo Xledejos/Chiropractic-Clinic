@@ -11,7 +11,6 @@ namespace ChiropracticClinic.DataAccess.Repository.IRepository
         Task Insert(T entity);
         Task<T?> GetById(Guid id);
         IQueryable<T> GetAll();
-        void Update(T entity);
-        Task<bool> Delete(Guid id);
+        void Delete(T entity);
     }
 }
